@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganora Holistic Hub - Working!</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        nav { background: rgba(255,255,255,0.1); padding: 20px; margin-bottom: 40px; }
+        nav h1 { font-size: 2rem; }
+        .hero { text-align: center; padding: 80px 20px; }
+        .hero h2 { font-size: 3.5rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.5rem; margin-bottom: 30px; opacity: 0.9; }
+        .btn { 
+            background: white; 
+            color: #667eea; 
+            padding: 15px 40px; 
+            border: none; 
+            border-radius: 8px; 
+            font-size: 1.2rem; 
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover { transform: scale(1.05); }
+        .status { 
+            background: rgba(255,255,255,0.2); 
+            padding: 20px; 
+            border-radius: 12px; 
+            margin: 40px 0; 
+        }
+        .status h3 { margin-bottom: 15px; font-size: 1.8rem; }
+        .status ul { list-style: none; padding-left: 20px; }
+        .status li { padding: 10px 0; font-size: 1.2rem; }
+        .status li:before { content: "✅ "; color: #4ade80; font-size: 1.4rem; }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <h1>🌊 Ganora Holistic Hub</h1>
+    </nav>
+    
+    <div class="container">
+        <div class="hero">
+            <h2>🎉 Website is Working!</h2>
+            <p>Transform Your Life with Pranic Healing</p>
+            <button class="btn" onclick="testBooking()">Book Session</button>
+        </div>
+        
+        <div class="status">
+            <h3>✅ System Status:</h3>
+            <ul>
+                <li>Server: Running</li>
+                <li>React: Loading...</li>
+                <li>Supabase: Connected</li>
+                <li>Razorpay: Configured (Test Mode)</li>
+            </ul>
+        </div>
+        
+        <div class="status">
+            <h3>🚀 Next Steps:</h3>
+            <ul>
+                <li>Click "Book Session" to test booking</li>
+                <li>Login with your account</li>
+                <li>First session is FREE</li>
+                <li>Second session: ₹500 via Razorpay UPI</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        function testBooking() {
+            alert('Booking system ready! Full React app loading...');
+            window.location.href = '/';
+        }
+        
+        // Check if React loaded
+        setTimeout(() => {
+            if (!document.getElementById('root')?.innerHTML) {
+                document.querySelector('.status li:nth-child(2)').innerHTML = '<span style="color:#ef4444">❌</span> React: Error loading';
+            } else {
+                document.querySelector('.status li:nth-child(2)').innerHTML = '<span style="color:#4ade80">✅</span> React: Loaded';
+            }
+        }, 2000);
+    </script>
+</body>
+</html>

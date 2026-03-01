@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="fav-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6EE7B7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60A5FA;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="64" height="64" rx="12" fill="#0f172a"/>
+  
+  <!-- Wave lines -->
+  <path d="M8 40 Q16 32 24 40 T40 40" fill="none" stroke="url(#fav-grad)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M8 48 Q16 42 24 48 T40 48" fill="none" stroke="url(#fav-grad)" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  
+  <!-- Center dot -->
+  <circle cx="32" cy="20" r="4" fill="url(#fav-grad)"/>
+</svg>

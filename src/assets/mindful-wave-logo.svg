@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Mindful Wave Logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#6EE7B7" />
+      <stop offset="100%" stop-color="#60A5FA" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="20" fill="#0f172a" />
+  <path d="M16 72c24-32 40 8 64-8" fill="none" stroke="url(#g)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M16 88c24-24 40 8 64-8" fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  <text x="50%" y="22" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" fill="#E6EEF8">Mindful Wave</text>
+</svg>
